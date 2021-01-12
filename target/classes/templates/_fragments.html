@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<!--head(title) title 是参数！-->
 <head th:fragment="head(title)">
+
     <meta charset="UTF-8">
     <!--  这段代码一般是用于网站页面在手机端显示时根据屏幕适应  -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -37,7 +39,7 @@
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon inverted input">
-                        <input type="text" name="query" placeholder="Search..." th:vlaue="${query}">
+                        <input type="text" name="query" placeholder="Search..." th:value="${query}">
                         <i onclick="document.forms['search'].submit()" class="search link icon"></i>
                     </div>
                 </form>

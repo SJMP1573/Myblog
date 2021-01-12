@@ -47,6 +47,7 @@ public class BlogServiceImpl implements BlogService{
         Blog b = new Blog();
         BeanUtils.copyProperties(blog,b);
         String content = b.getContent();
+//        将查询到的 blog 中的 content 属性更改
         b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
 //        更新 blog view。
         blogRepository.updateViews(id);
@@ -55,13 +56,19 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
+//        返回的是一个 page 对象
         return blogRepository.findAll(new Specification<Blog>() {
-            @Override // 将 Blog 映射到 root 中。criteriaQuery 条件的容器，CriteriaBuilder 设置具体条件的表达式
+            // 这个方法动态处理查询的条件。
+            // 将 Blog 映射到 Root 中，可以拿到表的字段。
+            // criteriaQuery 条件的容器，CriteriaBuilder 设置具体条件的表达式
+            @Override
             public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
                 // 组合条件放在 List 中
                 List<Predicate> predicates = new ArrayList<>();
+//                判断博客是否为空，若不为空，则添加查询条件
                 if(!"".equals(blog.getTitle()) && blog.getTitle()!=null){
-                    predicates.add(cb.like(root.<String>get("title"),blog.getTitle()+"%"));
+//                    将 sql 语句转化为方法，
+                    predicates.add(cb.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
                 }
 //                构造分类产生条件
                 if(blog.getTypeId() != null){
@@ -70,6 +77,7 @@ public class BlogServiceImpl implements BlogService{
                 if(blog.isRecommend()){
                     predicates.add(cb.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
                 }
+//                列表条件转化为数组条件
                 cq.where(predicates.toArray(new Predicate[predicates.size()]));
                 return null;
             }
@@ -88,7 +96,7 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     public List<Blog> listRecommendBlogTop(Integer size) {
-        Sort sort = Sort.by(Sort.Direction.DESC, "updateTime");
+        Sort sort = Sort.by(Sort.Direction.DESC, "createTime");
         Pageable pageable = PageRequest.of(0, size, sort);
         return blogRepository.findTop(pageable);
     }
@@ -99,6 +107,7 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Blog saveBlog(Blog blog) {
         if(blog.getId() == null){
+//            新增博客时，设置创建时间和更新时间！
             blog.setCreateTime(new Date());
             blog.setUpdateTime(new Date());
     //        浏览次数，初始为 0 .

@@ -45,7 +45,7 @@ public class BlogController {
     private TagService tagService;
 
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size = 2,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
+    public String blogs(@PageableDefault(size = 10,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
                         BlogQuery blog, Model model){
         model.addAttribute("types",typeService.listType());
         model.addAttribute("page",blogService.listBlog(pageable,blog));
@@ -53,9 +53,10 @@ public class BlogController {
     }
 
     @PostMapping("/blogs/search")
-    public String search(@PageableDefault(size = 2,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
+    public String search(@PageableDefault(size = 10,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
                         BlogQuery blog, Model model){
         model.addAttribute("page",blogService.listBlog(pageable,blog));
+        // 返回一个片段 blogList
         return "admin/blogs :: blogList";
     }
 
@@ -71,21 +72,22 @@ public class BlogController {
         model.addAttribute("tags",tagService.listTag());
     }
 
-//    点击 admin/blogs 页面下的删除按钮，浏览器会发送一个 URL 请求，  服务器映射对应函数下执行
     @GetMapping("/blogs/{id}/input")
-//    @PathVariable 获取请求连接中的博客 id，spring自动为Model创建实例，并作为controller的入参，后台要从控制层直接返回前端所需的数据。
+//    @PathVariable 获取请求连接中的博客 id，spring 自动为 Model 创建实例，并作为 controller 的入参，后台要从控制层直接返回前端所需的数据。
 //    这里将前端所需要的页面数据（flag，title，content，type，tags,firstPicture...）
     public String editInput(@PathVariable Long id, Model model){
         setTypeAndTag(model);
         Blog blog = blogService.getBlog(id);
+//        在 Blog 中,将当前的 tags 的数组，转换成用逗号分割的字符串
         blog.init();
         model.addAttribute("blog",blog);
         return INPUT;
     }
 
-    // 新增 blog
+    // 新增 blog,session 中有 user ，可以设置 blogs 中的 user ！
     @PostMapping("/blogs")
     private String post(Blog blog, RedirectAttributes attributes, HttpSession session){
+//        给 blog 设置 User
         blog.setUser((User) session.getAttribute("user"));
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
@@ -97,6 +99,7 @@ public class BlogController {
             b = blogService.updateBlog(blog.getId(),blog);
         }
 
+//        如果操作成功会返回 user ， 则操作成功， 如果操作失败返回空！这里会有弹出的消息！
         if(b == null){
             attributes.addFlashAttribute("message","操作失败");
         }else{

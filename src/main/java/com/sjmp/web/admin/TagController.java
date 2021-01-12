@@ -3,6 +3,7 @@ package com.sjmp.web.admin;
 import com.sjmp.po.Tag;
 import com.sjmp.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -31,19 +32,16 @@ public class TagController {
 
     @Autowired // 将 tagService 注入
     private TagService tagService;
+
     @GetMapping("/tags")
-
-
     //传入 Pageable 页面参数 size 是一条多少条，按主键 id 进行降序排列
-    public String tags(@PageableDefault(size = 10 ,
-            sort = {"id"},
-            direction = Sort.Direction.DESC)
-                                Pageable pageable,
-                        Model model){
+    public String tags(@PageableDefault(size = 10 , sort = {"id"}, direction = Sort.Direction.DESC)
+                                   Pageable pageable,
+                       Model model){
 
+        Page<Tag> tags = tagService.listTag(pageable);
 //        Model 是前端页面展示的一个组件
-        model.addAttribute("page",tagService.listTag(pageable));
-
+        model.addAttribute("page",tags);
         return "admin/tags";
     }
 
@@ -58,7 +56,8 @@ public class TagController {
 //    编辑 Tag
     @GetMapping("tags/{id}/input")
     public String editInput(@PathVariable Long id,Model model){
-        model.addAttribute("tag",tagService.getTag(id));
+        Tag tag = tagService.getTag(id);
+        model.addAttribute("tag",tag);
         return "admin/tags-input";
     }
 

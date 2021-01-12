@@ -74,14 +74,14 @@
                 </thead>
                 <tbody>
                      <!--拿到一行行的数据，填入到页面中。-->
-                    <tr th:each="type,iterStat : ${page.content}">
+                    <tr th:each="tag,iterStat : ${page.content}">
                         <td th:text="${iterStat.count}">1</td>
                         <!--// 拿到数据可以替换  “刻意练习清单”-->
-                        <td th:text="${type.name}">刻意练习清单</td>
+                        <td th:text="${tag.name}">刻意练习清单</td>
                         <td>
-                            <!--input(id=${type.id}) 替换他前面的 {id}-->
-                            <a href="#" th:href="@{/admin/tags/{id}/input(id=${type.id})}" class="ui mini teal basic button">编辑</a>
-                            <a href="#" th:href="@{/admin/tags/{id}/delete(id=${type.id})}" class="ui mini red basic button">删除</a>
+                            <!--input(id=${tag.id}) 替换他前面的 {id}-->
+                            <a href="#" th:href="@{/admin/tags/{id}/input(id=${tag.id})}" class="ui mini teal basic button">编辑</a>
+                            <a href="#" th:href="@{/admin/tags/{id}/delete(id=${tag.id})}" class="ui mini red basic button">删除</a>
                         </td>
                     </tr>
                 </tbody>

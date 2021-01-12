@@ -25,65 +25,74 @@ import java.util.List;
 @Service
 public class TypeServiceImpl implements TypeService {
 
-    //为什么他会拿到userServiceImpl？
-    // @Autowired会帮你按UserService的类型去容器中找唯一bean对象
-    // 1、容器没有该类型的对象：报错
-    // 2、容器中有该类型的唯一bean对象，就将该唯一bean对象赋值给该属性
-    ///3、容器中有多个【两个及以上】该类型的唯一bean对象，
-    //     它会再根据该属性名去容器中找，
-    //     看看容器中的哪个bean对象的id值和该属性名一致，
-    //     如果有，就将容器中该对象赋值给该属性，如果没有报错。
+    /*
+     *
+     * 为什么他会拿到userServiceImpl？
+     * @Autowired会帮你按UserService的类型去容器中找唯一bean对象
+     * 1、容器没有该类型的对象：报错
+     * 2、容器中有该类型的唯一bean对象，就将该唯一bean对象赋值给该属性
+     * 3、容器中有多个【两个及以上】该类型的唯一bean对象，它会再根据该属性名去容器中找，看看容器中的哪个bean对象的id值和该属性名一致，
+     * 如果有，就将容器中该对象赋值给该属性，如果没有报错。
+     *
+     * */
 
-//    TypeRepository 的实例化对象来自 JpaRepositoryFactoryBean 工厂，由JpaRepositoriesAutoConfiguration 实现自动配置
+    //    TypeRepository 的实例化对象来自 JpaRepositoryFactoryBean 工厂，由JpaRepositoriesAutoConfiguration 实现自动配置
     @Autowired    // 先按类型找，然后按id为属性名去找，
     private TypeRepository typeRepository;
 
-//    使用这个注解的类或者方法表示该类里面的所有方法或者这个方法的事务由spring处理，来保证事务的原子性，
-// 即是方法里面对数据库操作，如果失败则spring负责回滚操作，成功则提交操作。
-
+    /*
+     * 使用这个注解的类或者方法表示该类里面的所有方法或者这个方法的事务由spring处理，
+     * 来保证事务的原子性，即是方法里面对数据库操作，
+     * 如果失败则 spring 负责回滚操作，成功则提交操作。存储分类（增）
+     * */
     @Transactional //增删改查都放在事务里面
     @Override
     public Type saveType(Type type) {
         return typeRepository.save(type);
     }
 
+    //    根据 id 查询分类（查）
     @Transactional
     @Override
     public Type getType(Long id) {
         return typeRepository.getOne(id);
     }
 
+    //    （查）
     @Transactional
     @Override
     public Page<Type> listType(Pageable pageable) {
         return typeRepository.findAll(pageable);
     }
 
+    //    根据 id 更新分类（改）
     @Transactional
     @Override
     public Type updateType(Long id, Type type) {
         Type t = typeRepository.getOne(id);
-        if( t == null){
+        if (t == null) {
             throw new NotFoundException("不存在该类型");
         }
-        BeanUtils.copyProperties(type,t);
+        BeanUtils.copyProperties(type, t);
         return typeRepository.save(t);
     }
 
+    //    根据 id 删除分类
     @Transactional
     @Override
     public void deleteType(Long id) {
         typeRepository.deleteById(id);
     }
 
-//    查询数据库中是否有 Type
+    //    查询数据库中是否有 Type
     @Override
     public Type getTypeByName(String name) {
         return typeRepository.findByName(name);
     }
 
+    //    查
     @Override
-    public List<Type> listType(){
+    public List<Type> listType() {
         return typeRepository.findAll();
     }
 

@@ -143,7 +143,7 @@
                     <tr>
                         <th colspan="7">
                             <div class="ui mini floated pagination menu" th:if="${page.totalPages}>1">
-                                <!-- 点击时，动态处理 form 表单中的值-->
+                                <!-- 点击时，动态处理 form 表单中的值，onclick="page(this)" 点击时调用 js 方法，自定义属性-->
                                 <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item" th:unless="${page.first}">上一页</a>
                                 <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="item" th:unless="${page.last}">下一页</a>
                             </div>
@@ -178,10 +178,14 @@
 
                 <div class="three wide column">
                     <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
-                    <div class="ui inverted link list">
-                        <a href="#" class="item">用户故事（User Story）</a>
-                        <a href="#" class="item">用户故事（User Story）</a>
-                        <a href="#" class="item">用户故事（User Story）</a>
+                    <div id="newblog-container">
+                        <div class="ui inverted link list" th:fragment="newblogList">
+                            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
+                            <!--/*-->
+                            <a href="#" class="item">用户故事（User Story）</a>
+                            <a href="#" class="item">用户故事（User Story）</a>
+                            <!--*/-->
+                        </div>
                     </div>
                 </div>
 

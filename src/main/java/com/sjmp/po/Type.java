@@ -18,17 +18,23 @@ import java.util.List;
 public class Type {
 
     @Id // 指定主键
-    @GeneratedValue // 自动生成
+    @GeneratedValue // 指定增量方式，默认为 AUTO
     private Long id;
     @NotBlank(message = "分类名称不能为空")//与 TypeController 中 @Valid 一同使用，后端校验数据库数据为空吗？（新增 Type 为空？）
     private String name;
 
-    @OneToMany(mappedBy = "type") // Type 被维护 Blog 与 Type 的关系
+    /*
+    * mappedBy 用来标注**拥有**这种关系的字段。
+    * 除非关系是单向的，否则是必需的。
+    * 那么什么叫拥有关联关系呢，假设是双向一对一的话，
+    * 那么拥有关系的这一方有建立、解除和更新与另一方关系的能力。
+    * 而另一方没有，只能被动管理。
+    * */
+    @OneToMany(mappedBy = "type") // Type 被维护 Blog 与 Type 的关系,
     private List<Blog> blogs = new ArrayList<>();
 
     public Type() {
     }
-
 
     public Long getId() {
         return id;

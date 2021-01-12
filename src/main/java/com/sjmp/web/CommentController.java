@@ -32,7 +32,7 @@ public class CommentController {
     @Value("${comment.avatar}")
     private String avatar;
 
-    // 返回一个评论列表
+    // 详情页面,返回一个评论列表,展示该篇博客的详细信息
     @GetMapping("/comments/{blogId}")
     public String comments(@PathVariable Long blogId, Model model){
         model.addAttribute("comments",commentService.listCommentByBlogId(blogId));

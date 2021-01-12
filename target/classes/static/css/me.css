@@ -1,6 +1,7 @@
 body{
     background: url("../images/bg.png");
 }
+
 .m-padded{
     padding: 1em !important;
 }
@@ -42,10 +43,9 @@ body{
     padding-bottom: 5em !important;
 }
 .m-padded-lr-responsive{
-    padding-left: 4em !important;
-    padding-right: 4em !important;
+    padding-left: 10em !important;
+    padding-right: 10em !important;
 }
-
 
 /*-------- text ---------*/
 .m-text{
@@ -79,6 +79,13 @@ body{
 .m-margin-bottom-small{
     margin-bottom: 0.5em !important;
 }
+.m-margin-center{
+    margin: 0 auto;
+}
+.m-padded-lr-center{
+    padding-left: 9em;
+    padding-right: 9em;
+}
 
 
 /*------ opacity ------*/
@@ -109,6 +116,7 @@ body{
 }
 
 
+
 /*------ display -----*/
 .m-inline-block{
     display: inline-block !important;
@@ -123,6 +131,7 @@ body{
     max-width: 60em !important;
     margin: auto !important;
 }
+
 
 /*-----------color----------*/
 .m-black{

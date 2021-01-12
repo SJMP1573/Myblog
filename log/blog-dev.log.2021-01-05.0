@@ -1,0 +1,38 @@
+2021-01-05 20:23:38.849  INFO 16784 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 16784 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-05 20:23:38.852 DEBUG 16784 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-05 20:23:38.853  INFO 16784 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-05 20:23:38.884  INFO 16784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-05 20:23:38.884  INFO 16784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-05 20:23:39.411  INFO 16784 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-05 20:23:39.470  INFO 16784 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 5 JPA repository interfaces.
+2021-01-05 20:23:40.093  INFO 16784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-01-05 20:23:40.101  INFO 16784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-05 20:23:40.101  INFO 16784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-01-05 20:23:40.206  INFO 16784 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-05 20:23:40.206  INFO 16784 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1322 ms
+2021-01-05 20:23:40.346  INFO 16784 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-05 20:23:40.388  INFO 16784 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-05 20:23:40.436  INFO 16784 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-01-05 20:23:40.501  WARN 16784 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-05 20:23:40.550  INFO 16784 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-05 20:23:40.637  INFO 16784 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-05 20:23:40.740  INFO 16784 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-05 20:23:40.755  INFO 16784 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-01-05 20:23:41.384  INFO 16784 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-05 20:23:41.390  INFO 16784 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-05 20:23:41.731  INFO 16784 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-05 20:23:41.787  INFO 16784 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-05 20:23:41.871  WARN 16784 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-05 20:23:42.067  INFO 16784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-01-05 20:23:42.068  INFO 16784 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-05 20:23:42.505  INFO 16784 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-05 20:23:42.513  INFO 16784 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 4.121 seconds (JVM running for 5.565)
+2021-01-05 20:24:07.835  INFO 16784 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-05 20:24:07.836  INFO 16784 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-05 20:24:07.844  INFO 16784 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-01-05 20:24:13.249  INFO 16784 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-05 20:24:13.272  INFO 16784 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-05 20:24:13.272  INFO 16784 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-05 20:24:14.586  INFO 16784 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-05 20:24:14.590  INFO 16784 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-05 20:24:14.591  INFO 16784 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList

@@ -18,12 +18,15 @@ import java.util.List;
 public class Tag {
 
     @Id // 指定主键
-    @GeneratedValue // 自动生成类
+    @GeneratedValue(strategy = GenerationType.AUTO) // AUTO 主键由程序控制，指定增量的方式
     private Long id;
-    @NotBlank(message = "标签名称不能为空")//与 TypeController 中 @Valid 一同使用，后端校验数据库数据为空吗？（新增 Tag 为空？）
+    @NotBlank(message = "标签名称不能为空") //与 TypeController 中 @Valid 一同使用，后端校验数据库数据为空吗？（新增 Tag 为空？）
     private String name;
-    @ManyToMany(mappedBy = "tags")// tags 被维护 Blog 与 Tag 的关系
+    @ManyToMany(mappedBy = "tags") // blogs 是关系维护方（一方有建立、解出和更新另一方的能力），blog 的删除不会影响 tag
     private List<Blog> blogs = new ArrayList<>();
+
+    public Tag() {
+    }
 
     public List<Blog> getBlogs() {
         return blogs;
@@ -31,9 +34,6 @@ public class Tag {
 
     public void setBlogs(List<Blog> blogs) {
         this.blogs = blogs;
-    }
-
-    public Tag() {
     }
 
     public Long getId() {

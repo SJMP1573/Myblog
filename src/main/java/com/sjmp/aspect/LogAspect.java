@@ -20,37 +20,46 @@ import java.util.Arrays;
  */
 
 // 标记这是一个切面，可以使用切面的功能
-// 托管给springboot
+// 托管给 SpringBoot
 @Aspect
 @Component
 public class LogAspect {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+//    定义一个切面，web 包下的控制器都会拦截！
     @Pointcut("execution(* com.sjmp.web.*.*(..))")
     public void log(){}
 
     @Before("log()")
-    public void doBefore(JoinPoint joinPoint){
-//        获取 httpServletRequest.
+    public void doBefore(JoinPoint joinPoint){ // JoinPoint 获取类名和方法名
+//        获取 HttpServletRequest. 获取 ip / url
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         String url = request.getRequestURI();
         String ip = request.getRemoteAddr();
+
         String classMethod = joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
+
         RequestLog requestLog = new RequestLog(url, ip, classMethod, args);
         logger.info("Request : {} ",requestLog);
     }
+
     @After("log()")
     public void doAfter(){
         logger.info("---------doAfter----------");
     }
+
+//    返回方法的结果！
     @AfterReturning(returning = "result",pointcut = "log()")
     public void doAfterReturn(Object result){
-        logger.info("Result : {}" + result);
+        logger.info("Result : {}" , result);
     }
-//    内部类
+
+
+//    将请求者的相关信息封装成一个对象！
     private class  RequestLog{
+//        url 和 ip 可以通过 HttpServletRequest 获取！
         private String url;
         private  String ip;
         private  String classMethod;

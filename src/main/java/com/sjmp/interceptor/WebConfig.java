@@ -10,6 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @description: 配置需要拦截的页面
  */
 
+//标记为配置类
 @Configuration
 public class WebConfig implements WebMvcConfigurer{
     @Override

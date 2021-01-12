@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<!--title 是元素标签，作为一个参数传递-->
 <head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
 
@@ -292,7 +293,7 @@
                                 <a href="#" th:href="@{/(page=${page.number}-1)}" th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
                             </div>
                             <div class="right aligned column">
-                                <a href="#" th:href="@{/(page=${page.number}+1)}" th:unless="${page.last}" class="ui mini teal basic button">上一页</a>
+                                <a href="#" th:href="@{/(page=${page.number}+1)}" th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
                             </div>
                         </div>
                     </div>
@@ -300,7 +301,7 @@
 <!--                右边的 top-->
                 <div class="five wide column">
 <!--                        分类-->
-                    <div class="ui segments m-margin-top-large">
+                    <div class="ui segments">
                         <div class="ui secondary segment">
                             <div class="ui two column grid">
                                 <div class="column">
@@ -428,8 +429,6 @@
         </div>
     </div>
 
-    <br>
-    <br>
     <!--  底部 footer  -->
 <!--  inverted 反色 segement 线框效果 vertical 充满没有圆角  -->
     <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive" >

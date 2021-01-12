@@ -1,0 +1,460 @@
+2020-12-16 19:47:17.224  INFO 21460 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 21460 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2020-12-16 19:47:17.228 DEBUG 21460 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-12-16 19:47:17.228  INFO 21460 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2020-12-16 19:47:17.260  INFO 21460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-16 19:47:17.261  INFO 21460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-16 19:47:17.800  INFO 21460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-16 19:47:17.859  INFO 21460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 5 JPA repository interfaces.
+2020-12-16 19:47:18.448  INFO 21460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-12-16 19:47:18.456  INFO 21460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-16 19:47:18.456  INFO 21460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-12-16 19:47:18.559  INFO 21460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-16 19:47:18.559  INFO 21460 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1298 ms
+2020-12-16 19:47:18.672  INFO 21460 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-16 19:47:18.707  INFO 21460 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-16 19:47:18.754  INFO 21460 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-12-16 19:47:18.821  WARN 21460 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-16 19:47:18.879  INFO 21460 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-16 19:47:18.969  INFO 21460 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-16 19:47:19.066  INFO 21460 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-16 19:47:19.081  INFO 21460 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-12-16 19:47:19.694  INFO 21460 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-16 19:47:19.700  INFO 21460 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-16 19:47:20.073  INFO 21460 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-16 19:47:20.116  INFO 21460 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-16 19:47:20.173  WARN 21460 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-16 19:47:20.347  INFO 21460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-12-16 19:47:20.348  INFO 21460 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-16 19:47:20.752  INFO 21460 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-16 19:47:20.758  INFO 21460 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 4.0 seconds (JVM running for 5.628)
+2020-12-16 19:47:42.965  INFO 21460 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-16 19:47:42.965  INFO 21460 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-16 19:47:42.976  INFO 21460 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-12-16 19:47:43.000  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 19:47:43.078  WARN 21460 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-16 19:47:43.086  WARN 21460 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-16 19:47:43.091  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:47:43.091  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 19:47:43.871  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:47:43.875  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:47:43.875  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:48:15.821  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:48:15.825  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:48:15.825  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:48:26.170  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:48:26.173  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:48:26.173  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:48:28.054  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:48:28.057  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:48:28.057  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:48:30.526  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:48:30.531  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:48:30.531  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:48:38.642  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/blog/70', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[70, {}]} 
+2020-12-16 19:48:38.693  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:48:38.693  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:48:39.086  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:48:39.089  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:48:39.090  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:48:39.294  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/comments/70', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[70, {}]} 
+2020-12-16 19:48:39.315  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:48:39.315  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 19:50:57.346  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 19:50:57.356  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:50:57.356  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 19:50:57.671  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:50:57.674  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:50:57.674  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:50:59.407  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/blog/73', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[73, {}]} 
+2020-12-16 19:50:59.420  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:50:59.420  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:50:59.715  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:50:59.718  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:50:59.718  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:50:59.865  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/comments/73', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[73, {}]} 
+2020-12-16 19:50:59.867  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:50:59.867  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 19:53:16.587  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/blog/70', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[70, {}]} 
+2020-12-16 19:53:16.598  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:53:16.598  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:53:16.977  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:53:16.982  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:53:16.982  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:53:17.069  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/comments/70', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[70, {}]} 
+2020-12-16 19:53:17.071  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:53:17.071  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 19:53:42.665  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/blog/70', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[70, {}]} 
+2020-12-16 19:53:42.674  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:53:42.674  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:53:43.027  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:53:43.030  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:53:43.030  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:53:43.137  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/comments/70', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[70, {}]} 
+2020-12-16 19:53:43.138  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:53:43.139  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 19:54:09.021  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/blog/73', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[73, {}]} 
+2020-12-16 19:54:09.029  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:09.030  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:54:09.418  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:54:09.421  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:09.421  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:54:09.532  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/comments/73', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[73, {}]} 
+2020-12-16 19:54:09.534  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:09.535  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 19:54:16.497  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/blog/73', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[73, {}]} 
+2020-12-16 19:54:16.502  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:16.502  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:54:16.788  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:54:16.791  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:16.792  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:54:16.900  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/comments/73', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[73, {}]} 
+2020-12-16 19:54:16.902  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:16.902  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 19:54:24.484  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 19:54:24.495  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:24.495  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 19:54:24.798  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:54:24.804  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:24.804  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:54:28.700  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 19:54:28.711  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:28.711  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 19:54:29.053  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:54:29.056  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:29.056  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:54:32.204  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 19:54:32.215  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:32.215  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 19:54:32.519  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:54:32.524  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:54:32.524  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:55:00.652  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 19:55:00.660  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:55:00.660  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 19:55:01.049  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:55:01.052  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:55:01.052  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:55:02.307  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/blog/88', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[88, {}]} 
+2020-12-16 19:55:02.317  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:55:02.317  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:55:02.673  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:55:02.676  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:55:02.676  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:55:02.750  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/comments/88', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[88, {}]} 
+2020-12-16 19:55:02.751  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:55:02.752  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 19:57:56.482  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/blog/88', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[88, {}]} 
+2020-12-16 19:57:56.491  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:57:56.491  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:57:56.858  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:57:56.862  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:57:56.862  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:57:56.962  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/comments/88', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[88, {}]} 
+2020-12-16 19:57:56.963  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:57:56.963  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 19:58:32.676  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 19:58:32.681  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:58:32.681  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 19:58:33.025  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:58:33.027  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:58:33.027  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:58:34.129  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/blog/86', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[86, {}]} 
+2020-12-16 19:58:34.147  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:58:34.147  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 19:58:34.728  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 19:58:34.731  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:58:34.731  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 19:58:35.072  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/comments/86', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[86, {}]} 
+2020-12-16 19:58:35.073  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 19:58:35.073  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:00:40.443  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 20:00:40.452  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:00:40.452  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 20:00:40.837  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:00:40.839  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:00:40.839  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:00:48.595  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 20:00:48.601  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:00:48.601  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 20:00:48.908  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:00:48.911  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:00:48.911  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:00:50.220  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/blog/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[75, {}]} 
+2020-12-16 20:00:50.234  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:00:50.235  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:00:50.600  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:00:50.602  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:00:50.602  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:00:50.926  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/comments/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[75, {}]} 
+2020-12-16 20:00:50.927  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:00:50.928  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:17:10.548  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/blog/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[75, {}]} 
+2020-12-16 20:17:10.563  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:17:10.563  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:17:11.056  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:17:11.060  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:17:11.060  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:17:11.434  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/comments/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[75, {}]} 
+2020-12-16 20:17:11.436  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:17:11.436  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:17:40.345  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/blog/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[75, {}]} 
+2020-12-16 20:17:40.358  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:17:40.358  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:17:40.764  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:17:40.767  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:17:40.767  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:17:40.971  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/comments/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[75, {}]} 
+2020-12-16 20:17:40.973  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:17:40.973  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:21:55.931  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/blog/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[75, {}]} 
+2020-12-16 20:21:55.943  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:21:55.943  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:21:56.339  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:21:56.341  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:21:56.341  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:21:56.612  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/comments/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[75, {}]} 
+2020-12-16 20:21:56.613  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:21:56.613  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:22:29.089  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/blog/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[75, {}]} 
+2020-12-16 20:22:29.101  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:22:29.101  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:22:29.486  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:22:29.488  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:22:29.488  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:22:29.754  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/comments/75', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[75, {}]} 
+2020-12-16 20:22:29.755  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:22:29.755  INFO 21460 --- [http-nio-8081-exec-4] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:23:23.826  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 20:23:23.832  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:23:23.832  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 20:23:24.221  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:23:24.223  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:23:24.223  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:23:28.432  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/blog/78', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[78, {}]} 
+2020-12-16 20:23:28.445  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:23:28.445  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:23:28.849  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:23:28.851  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:23:28.852  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:23:28.962  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/comments/78', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[78, {}]} 
+2020-12-16 20:23:28.964  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:23:28.964  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:33:17.387  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/blog/78', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[78, {}]} 
+2020-12-16 20:33:17.397  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:33:17.398  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:33:17.767  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:33:17.769  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:33:17.769  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:33:17.922  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/comments/78', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[78, {}]} 
+2020-12-16 20:33:17.924  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:33:17.924  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:35:04.123  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 20:35:04.130  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:35:04.130  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 20:35:04.510  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:35:04.512  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:35:04.512  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:35:07.167  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/blog/79', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[79, {}]} 
+2020-12-16 20:35:07.179  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:35:07.179  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:35:07.482  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:35:07.485  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:35:07.485  INFO 21460 --- [http-nio-8081-exec-6] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:35:07.748  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/comments/79', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[79, {}]} 
+2020-12-16 20:35:07.749  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:35:07.749  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 20:46:17.405  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/blog/79', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[79, {}]} 
+2020-12-16 20:46:17.415  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:46:17.415  INFO 21460 --- [http-nio-8081-exec-3] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 20:46:17.782  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 20:46:17.785  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:46:17.785  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 20:46:18.046  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/comments/79', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[79, {}]} 
+2020-12-16 20:46:18.048  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 20:46:18.048  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 21:53:56.125 ERROR 21460 --- [http-nio-8081-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed] with root cause
+
+java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendRedirect(ResponseFacade.java:488)
+	at org.springframework.web.servlet.view.RedirectView.sendRedirect(RedirectView.java:627)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:314)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-12-16 21:55:01.448 ERROR 21460 --- [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed] with root cause
+
+java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendRedirect(ResponseFacade.java:488)
+	at org.springframework.web.servlet.view.RedirectView.sendRedirect(RedirectView.java:627)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:314)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-12-16 21:56:56.805 ERROR 21460 --- [http-nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed] with root cause
+
+java.lang.IllegalStateException: Cannot call sendRedirect() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendRedirect(ResponseFacade.java:488)
+	at org.springframework.web.servlet.view.RedirectView.sendRedirect(RedirectView.java:627)
+	at org.springframework.web.servlet.view.RedirectView.renderMergedOutputModel(RedirectView.java:314)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-12-16 21:59:28.208  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 21:59:28.210  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 21:59:28.210  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 21:59:43.815  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/blog/86', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[86, {}]} 
+2020-12-16 21:59:43.830  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 21:59:43.830  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 21:59:44.221  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 21:59:44.224  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 21:59:44.224  INFO 21460 --- [http-nio-8081-exec-10] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 21:59:44.781  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/comments/86', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[86, {}]} 
+2020-12-16 21:59:44.784  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 21:59:44.784  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 21:59:53.677  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]} 
+2020-12-16 21:59:53.684  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 21:59:53.685  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}index
+2020-12-16 21:59:59.910  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 21:59:59.913  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 21:59:59.913  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 22:00:34.521  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/blog/86', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[86, {}]} 
+2020-12-16 22:00:34.534  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 22:00:34.534  INFO 21460 --- [http-nio-8081-exec-2] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 22:00:34.915  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 22:00:34.917  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 22:00:34.917  INFO 21460 --- [http-nio-8081-exec-8] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 22:00:35.335  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/comments/86', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[86, {}]} 
+2020-12-16 22:00:35.336  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 22:00:35.336  INFO 21460 --- [http-nio-8081-exec-1] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList
+2020-12-16 22:00:55.723  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/blog/86', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[86, {}]} 
+2020-12-16 22:00:55.733  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 22:00:55.733  INFO 21460 --- [http-nio-8081-exec-7] com.sjmp.aspect.LogAspect                : Result : {}blog
+2020-12-16 22:00:56.024  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2020-12-16 22:00:56.026  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 22:00:56.026  INFO 21460 --- [http-nio-8081-exec-9] com.sjmp.aspect.LogAspect                : Result : {}_fragments :: newblogList
+2020-12-16 22:00:56.420  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/comments/86', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[86, {}]} 
+2020-12-16 22:00:56.421  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2020-12-16 22:00:56.421  INFO 21460 --- [http-nio-8081-exec-5] com.sjmp.aspect.LogAspect                : Result : {}blog :: commentList

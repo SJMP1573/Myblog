@@ -46,24 +46,24 @@
             <!--        左边整体布局-->
             <div class="eleven wide column">
                 <div class="ui segment">
-                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600956573158&di=d5062ccb646cea00243843c56553eb54&imgtype=0&src=http%3A%2F%2F07.imgmini.eastday.com%2Fmobile%2F20180422%2F64e5a65948ba62a731cb65eb975553e2.jpeg" alt="" class="ui rounded image">
+                    <img th:src=@{/images/stepByStep.png} src="../../static/images/stepByStep.png" alt="" class="ui rounded image">
                 </div>
             </div>
             <!--        右边整体布局-->
             <div class="five wide column">
                 <div class="ui top attached segment">
-                    <div class="ui header">关于我</div>
+                    <div class="ui header" style="text-align: center">关于我</div>
                 </div>
                 <div class="ui attached segment">
-                    <p class="m-text"> 赖某某.... </p>
-                    <p class="m-text"> 热爱玩耍.... </p>
+                    <p class="m-text"> Java 菜鸟一枚，喜欢编程，热爱学习，追求不断成长！</p>
+                    <p class="m-text"> 仰望天空，脚踏实地！ </p>
                 </div>
                 <div class="ui attached segment">
                     <div class="ui orange basic left pointing label">
                         编程
                     </div>
                     <div class="ui orange basic left pointing label">
-                        写作
+                        学习
                     </div>
                     <div class="ui orange basic left pointing label">
                         思考
@@ -74,36 +74,46 @@
                 </div>
                 <div class="ui attached segment">
                     <div class="ui teal basic left pointing label m-margin-tb-tiny">
-                        Java
-                    </div>
-                    <div class="ui teal basic left pointing label m-margin-tb-tiny">
-                        数据库
+                        Java SE
                     </div>
                     <div class="ui teal basic left pointing label m-margin-tb-tiny">
                         MySQL
                     </div>
                     <div class="ui teal basic left pointing label m-margin-tb-tiny">
-                        JDBC
+                        JVM
+                    </div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">
+                        JUC
+                    </div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">
+                        SSM
+                    </div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">
+                        SpringBoot
                     </div>
                 </div>
                 <div class="ui bottom attached segment">
-                    <a href="#" target="_blank" class="ui circular icon button">
+                    <a href="https://github.com/SJMP1573" target="_blank" class="ui circular icon button">
                         <i class="github icon"></i>
                     </a>
-                    <a href="#" target="_blank" class="ui wechat circular icon button">
+                    <div href="#" target="_blank" class="ui wechat circular icon button">
                         <i class="wechat icon"></i>
-                    </a>
-                    <a href="#" target="_blank" class="ui qq circular icon button" data-content="1051181472" data-position="bottom center">
+                    </div>
+                    <div href="#" target="_blank" class="ui qq circular icon button" data-content="1051181472" data-position="bottom center">
                         <i class="qq icon"></i>
-                    </a>
+                    </div>
                 </div>
+
 <!--                鼠标放在 wechat 上，弹出下面二维码-->
                 <div class="ui WeChat-QR flowing popup transition hidden">
-                    <img src="../static/images/WeChat.jpg" alt="" class="ui rounded image" style="width: 120px">
+                    <img th:src="@{/images/WeChat.jpg}" src="../static/images/WeChat.jpg" alt="" class="ui rounded image" style="width: 120px">
                 </div>
+                <div class="ui QQ flowing popup transition hidden">
+                    <img th:src="@{/images/QQ.jpg}" src="../static/images/QQ.jpg" alt="" class="ui rounded image" style="width: 120px">
+                </div>
+
             </div>
         </div>
-
     </div>
 
     <br>
@@ -162,7 +172,10 @@
             popup : $('.WeChat-QR'),
             position : 'bottom center'
         });
-        $('.qq').popup();
+        $('.qq').popup({
+            popup : $('.QQ'),
+            position : 'bottom center'
+        });
     </script>
 </body>
 </html>

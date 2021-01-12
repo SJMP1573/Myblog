@@ -6,24 +6,30 @@ spring:
     username: root
     password: 1234
 
+
 # 解决分类点击新增，无法正常跳转到 types-input 页面
   thymeleaf:
     content-type: text/html
     mode: LEGACYHTML5
     cache: false
+
 #  简化数据库的连接
   jpa:
     hibernate:
       ddl-auto: update
+
 #      将 sql 语句输出到日志和控制台
     show-sql: true
-#    配置日志
+
+#    配置日志 ，按 10 M 大小切分
 logging:
   level:
     root: info
     com.sjmp: debug
   file:
     name: log/blog-dev.log
+server:
+  port: 8082
 
 
 

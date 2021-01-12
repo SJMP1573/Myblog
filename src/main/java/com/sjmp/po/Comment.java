@@ -24,7 +24,7 @@ public class Comment {
     private String avatar;
     private String content;
 
-    @Temporal(TemporalType.TIMESTAMP) // 对应的数据库的表时间
+    @Temporal(TemporalType.TIMESTAMP) // 对应生成到数据库的表时间
     private Date createTime;
     @ManyToOne
     private Blog blog;

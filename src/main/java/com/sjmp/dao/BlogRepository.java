@@ -18,6 +18,7 @@ import java.util.List;
  * @description:
  */
 
+// JpaSpecificationExecutor<Blog> 实现组合动态的查询
 public interface BlogRepository extends JpaRepository<Blog,Long>,JpaSpecificationExecutor<Blog>{
 
     @Query("select b from Blog b where b.recommend=true ")

@@ -444,7 +444,7 @@ h5,h6{font-size:1em;}
 
 
 
-                <!--                标签-->
+                <!--标签-->
                 <div class="m-padded-lr-responsive m-padded-tb-large">
                     <div class="ui basic teal left pointing label" th:each="tag:${blog.tags}" th:text="${tag.name}">方法论</div>
                 </div>
@@ -513,6 +513,7 @@ h5,h6{font-size:1em;}
                                     <div class="text" th:text="${comment.content}">
                                         How artistic!
                                     </div>
+                                    <!--data-commentid 这是点击回复评论的父 id ,data-commentnickname 是父 nickname-->
                                     <div class="actions">
                                         <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${comment.id},data-commnetnickname=${comment.nickname}" onclick="reply(this)">回复</a>
                                     </div>
@@ -630,7 +631,7 @@ h5,h6{font-size:1em;}
         </div>
     </div>
 
-<!--    右下角浮动的图标-->
+    <!--右下角浮动的图标-->
     <div id="toolbar" class="m-fixed m-padded" style="display: none">
         <div class="ui vertical icon buttons ">
             <button type="button" class="ui toc teal button">目录</button>
@@ -640,7 +641,7 @@ h5,h6{font-size:1em;}
         </div>
     </div>
 
-    <!--                点击右下角目录弹出来的二维码窗口-->
+    <!--点击右下角目录弹出来的二维码窗口-->
     <div class="ui toc-container flowing popup transition hidden" style="width: 250px !important;">
         生成的目录
         <ol class="js-toc">
@@ -648,9 +649,9 @@ h5,h6{font-size:1em;}
         </ol>
     </div>
 
-<!--    点击右下角弹出二维码，可手机扫描阅读-->
+    <!--点击右下角弹出二维码，可手机扫描阅读-->
     <div id="qrcode" class="ui WeChat-QR flowing popup transition hidden" style="width: 130px !important;">
-<!--        <img src="static/images/WeChat.jpg" alt="" class="ui rounded image " style="width: 120px !important;">-->
+    <!--<img src="static/images/WeChat.jpg" alt="" class="ui rounded image " style="width: 120px !important;">-->
     </div>
 
 
@@ -805,11 +806,12 @@ h5,h6{font-size:1em;}
             }
         });
 
-        // 加载评论信息
+        // 进入详情页面后，局部加载评论信息
         $(function () {
             $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/6");
         });
 
+        // 点击发布按钮进行 JS 非空校验
         $('#commentpost-btn').click(function () {
            var boo = $('.ui.form').form('validate form');
            if(boo){
@@ -819,7 +821,8 @@ h5,h6{font-size:1em;}
                console.log('校验失败');
            }
         });
-        
+
+        // 评论表单局部提交数据
         function postData() {
             $("#comment-container").load(/*[[@{/comments}]]*/"",{
                 "parentComment.id" : $("[name='parentComment.id']").val(),
@@ -832,6 +835,8 @@ h5,h6{font-size:1em;}
                 clearContent();
             });
         }
+
+        // 使用 Ajax 请求数据成功后清除下列内容
         function clearContent() {
             $("[name='content']").val('');
             $("[name='parentComment.id']").val('-1');

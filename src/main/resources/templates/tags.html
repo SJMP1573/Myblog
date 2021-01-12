@@ -47,7 +47,7 @@
             <div class="ui top attached segment">
                 <div class="ui middle aligned two column grid">
                     <div class="column">
-                        <h3 class="ui teal header">分类</h3>
+                        <h3 class="ui teal header">标签</h3>
                     </div>
                     <div class="right aligned column">
                         共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(tags)}"> 14 </h2> 个
@@ -59,7 +59,7 @@
 <!--                这是一个标签/高亮-->
                 <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui left pointing large basic label m-margin-tb-tiny" th:classappend="${tag.id==activeTagId}?'teal'" th:each="tag:${tags}">
                     <span th:text="${tag.name}">方法论</span>
-                    <div class="detail">23</div>
+                    <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
                 </a>
             </div>
 

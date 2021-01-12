@@ -10,6 +10,7 @@
     <!--  前端框架 semantic ui 的引入  -->
     <!--  引入样式  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+
     <!--  引入自定义样式  -->
     <link rel="stylesheet" href="../../static/css/me.css">
 </head>
@@ -52,11 +53,11 @@
                         <button class="ui fluid large teal submit button">登    录</button>
                     </div>
 
-                    <!--表单提交错误的验证-->
+                    <!-- 表单提交错误的验证，为空时的验证 -->
                     <div class="ui error mini message"></div>
-
+                    <!--后台验证，重定向错误消息-->
                     <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">
-                        用户名和密码错误
+                        用户名或密码错误
                     </div>
                 </form>
 
@@ -80,17 +81,21 @@
         fields:{
             username:{
                 identifier:'username',
-                rules: [{
-                    type: 'empty',
-                    prompt: '请输入用户名'
-                }]
+                rules: [
+                    {
+                        type: 'empty',
+                        prompt: '请输入用户名'
+                    }
+                ]
             },
             password:{
                 identifier:'password',
-                rules: [{
-                    type: 'empty',
-                    prompt: '请输入密码'
-                }]
+                rules: [
+                    {
+                        type: 'empty',
+                        prompt: '请输入密码'
+                    }
+                ]
             }
         }
     });

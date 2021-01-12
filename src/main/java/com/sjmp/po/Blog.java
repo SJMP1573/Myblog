@@ -15,50 +15,40 @@ import java.util.List;
 
 // @Entity 对应到数据库生成指定的表
 @Entity
-// 对应数据库的表名字("t_blog"),统一前缀
+// @Table(name = "t_blog") 对应数据库的表名字("t_blog"),统一前缀
 @Table(name = "t_blog")
 public class Blog {
 
     @Id // 标记主键
-    @GeneratedValue // 自动生成
-    // 博客文章的 id，Long包装类。
-    private Long id;
-    // 博客文章的 标题。
-    private String title;
-//    博客文章的内容。
-    @Basic(fetch = FetchType.LAZY) //这两个的功能是将 content 标记为 Longtext 字段，否则大小为255
-    @Lob
-    private String content;
-    // 博客 的插图
-    private String firstPicture;
-    // 博客是 转载/原创
-    private String flag;
-    // 浏览的数量
-    private Integer views;
-    // 是否开启赞赏
-    private boolean appreciation;
-    // 是否开启分享声明
-    private boolean shareStatement;
-    // 是否开启评论
-    private boolean commentabled;
-    // 保存草稿还是发布
-    private boolean published;
-    // 是否标记为推荐
-    private boolean recommend;
-    // 创建的时间
+    @GeneratedValue // 指定自增的方式
+    private Long id;// 博客文章的 id，Long包装类。
+    private String title;// 博客文章的 标题。
+    @Basic(fetch = FetchType.LAZY) // 因为 content 内容较大，故采取此注解可以达到使用时才获取的效果！
+    @Lob // 指定持久属性或字段应作为大对象持久保存到数据库支持的大对象类型。
+    // String 类的对应数据库默认值 为 longtext 。否则大小为255
+    private String content;// 博客文章的内容。
+    private String firstPicture;// 博客 的插图
+    private String flag;// 博客是 转载/原创/翻译
+    private Integer views;// 浏览的数量
+    private boolean appreciation;// 是否开启赞赏
+    private boolean shareStatement;// 是否开启分享声明、
+    private boolean commentabled;// 是否开启评论
+    private boolean published;// 保存草稿还是发布
+    private boolean recommend;// 是否标记为推荐
+    @Temporal(TemporalType.TIMESTAMP) //  数据库的字段类型有date、time、datetime,
+    // 而 Temporal 注解的作用就是帮 Java 的 Date 类型进行格式化.对应的数据库的表时间
+    private Date createTime;// 创建的时间
     @Temporal(TemporalType.TIMESTAMP) // 对应的数据库的表时间
-    private Date createTime;
-    // 修改的时间
-    @Temporal(TemporalType.TIMESTAMP) // 对应的数据库的表时间
-    private Date updateTime;
-    @ManyToOne // Blog 主动维护与 Type 的关系，包含一个Type
+    private Date updateTime;// 修改的时间
+    @ManyToOne // Blog 主动维护与 Type 的关系，包含一个 Type
     private Type type;
-    // CascadeType.PERSIST ,级联新增，增加一个新标签会自动保存。
+    // CascadeType.PERSIST ,级联新增，增加一个含新标签的 Blog，标签会自动保存。
     @ManyToMany(cascade = {CascadeType.PERSIST}) // 多对多的关系
     private List<Tag> tags = new ArrayList<>();
     @ManyToOne
     private User user;
-    @OneToMany(mappedBy = "blog")
+    @OneToMany(mappedBy = "blog") // 维护关系的一方是多的一方（一对多）
+    // 如果让" 多"方面维护关系时就不会有update操作，因为关系就是在多方的对象中的，直指插入或是删除多方对象就行了。
     private List<Comment> comments = new ArrayList<>();
     @Transient
     private String tagIds;
@@ -219,12 +209,12 @@ public class Blog {
         this.description = description;
     }
 
-    // 将当前的tags 的数组，转换成用逗号分割的字符串
-    public void init(){
+    // 将当前的 tags 的数组，转换成用逗号分割的字符串
+    public void init() {
         this.tagIds = tagsToIds(this.getTags());
     }
 
-    //1,2,3
+    //1,2,3 ; 数组转换为字符串！
     private String tagsToIds(List<Tag> tags) {
         if (!tags.isEmpty()) {
             StringBuffer ids = new StringBuffer();
@@ -244,7 +234,7 @@ public class Blog {
     }
 
     @Override
-    public String    toString() {
+    public String toString() {
         return "Blog{" +
                 "id=" + id +
                 ", title='" + title + '\'' +

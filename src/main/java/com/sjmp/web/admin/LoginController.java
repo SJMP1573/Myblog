@@ -18,38 +18,50 @@ import javax.servlet.http.HttpSession;
  * @description:
  */
 
+// @Controller只是定义了一个控制器类
+// @RequestMapping注解的方法才是处理请求的处理器。
 @Controller
 @RequestMapping("/admin")
 public class LoginController {
 
-
+//  检查用户名及密码时，需要使用 UserService 中的 checkUser() 方法，所以注入 userService 对象
     @Autowired
     private UserService userService;
 
+    /*
+    * @GetMapping用于处理请求方法的GET类型，
+    * @PostMapping用于处理请求方法的POST类型
+    * @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
+    * 新方法可以简化为：@GetMapping("/get/{id}")
+    *
+    * */
     @GetMapping
     public String loginPage(){
-        return "admin/login";
+        return "admin/login"; // 当输入请求 /admin ，进入 login.html（/admin/login.html）页面
     }
 
-    // 登录时，传入用户名，密码
+    // 登录 /admin/login.html，传入用户名，密码
     @PostMapping("/login")
     public String login(@RequestParam String username,
                         @RequestParam String password,
-                        HttpSession session,
+                        HttpSession session,  // user 与 server 建立的会话！可记录访问者的一些信息！
                         RedirectAttributes attributes){
-        User user = userService.checkUser(username, password);
+
+        User user = userService.checkUser(username, password);//用户密码正确，返回该 user 对象，否则返回 null ！
+
         if(user != null){
             user.setPassword(null);
             session.setAttribute("user",user);
             return "admin/index";
         }else{
-            attributes.addFlashAttribute("message","用户名和密码错误");
-            // 用户名密码不对，重定向到登录页面
+//            用户不通过验证，将错误参数传到前端！重定向到登录页面！
+            attributes.addFlashAttribute("message","用户名或密码错误！");
+//            不能使用 Model; Model 存放的时在请求域中，重定向之后是另一个请求，所以拿不到！
             return "redirect:/admin";
         }
     }
 
-    // 注销当前登录的用户
+    // （/admin/logout）注销当前登录的用户
     @GetMapping("/logout")
     public String logout(HttpSession session){
         session.removeAttribute("user");

@@ -1,8 +1,8 @@
 # 应用名称
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: 1234
 # 解决分类点击新增，无法正常跳转到 types-input 页面
@@ -19,10 +19,9 @@ spring:
 #    配置日志
 logging:
   level:
-    root: worn
+    root: warn
     com.sjmp: info
   file:
     name: log/blog-pro.log
 server:
-  port: 8081
-
+  port: 8082

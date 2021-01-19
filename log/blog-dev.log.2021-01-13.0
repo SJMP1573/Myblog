@@ -1,0 +1,335 @@
+2021-01-13 19:55:08.684  INFO 23476 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 23476 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-13 19:55:08.688 DEBUG 23476 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-13 19:55:08.688  INFO 23476 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-13 19:55:08.724  INFO 23476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-13 19:55:08.724  INFO 23476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-13 19:55:09.249  INFO 23476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-13 19:55:09.309  INFO 23476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 5 JPA repository interfaces.
+2021-01-13 19:55:09.909  INFO 23476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-01-13 19:55:09.917  INFO 23476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-13 19:55:09.918  INFO 23476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-01-13 19:55:09.990  INFO 23476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-13 19:55:09.990  INFO 23476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1266 ms
+2021-01-13 19:55:10.176  INFO 23476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-13 19:55:10.218  INFO 23476 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-13 19:55:10.262  INFO 23476 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-01-13 19:55:10.325  WARN 23476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-13 19:55:10.381  INFO 23476 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-13 19:55:10.466  INFO 23476 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-13 19:55:10.563  INFO 23476 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-13 19:55:10.578  INFO 23476 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-01-13 19:55:11.262  INFO 23476 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-13 19:55:11.268  INFO 23476 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 19:55:11.635  INFO 23476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-13 19:55:11.659  INFO 23476 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-13 19:55:11.710  WARN 23476 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-13 19:55:11.905  INFO 23476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-01-13 19:55:11.906  INFO 23476 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-13 19:55:12.191  INFO 23476 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-13 19:55:12.198  INFO 23476 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.988 seconds (JVM running for 5.538)
+2021-01-13 19:55:52.326  INFO 23476 --- [Thread-196] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 19:55:52.327  INFO 23476 --- [Thread-196] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-13 19:55:52.328  INFO 23476 --- [Thread-196] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-13 19:55:52.333  INFO 23476 --- [Thread-196] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-13 19:55:52.499  INFO 23476 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 23476 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-13 19:55:52.499 DEBUG 23476 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-13 19:55:52.500  INFO 23476 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-13 19:55:52.652  INFO 23476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-13 19:55:52.667  INFO 23476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 5 JPA repository interfaces.
+2021-01-13 19:55:52.791  INFO 23476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-13 19:55:52.792  INFO 23476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-13 19:55:52.792  INFO 23476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-01-13 19:55:52.807  INFO 23476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-13 19:55:52.807  INFO 23476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 306 ms
+2021-01-13 19:55:52.854  INFO 23476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-13 19:55:52.865  INFO 23476 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-13 19:55:52.869  INFO 23476 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-01-13 19:55:52.872  INFO 23476 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-01-13 19:55:52.872  INFO 23476 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-01-13 19:55:52.943  WARN 23476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-13 19:55:52.993  INFO 23476 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-13 19:55:52.993  INFO 23476 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 19:55:53.176  INFO 23476 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-13 19:55:53.198  INFO 23476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-13 19:55:53.229  WARN 23476 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-13 19:55:53.362  INFO 23476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-13 19:55:53.362  INFO 23476 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-13 19:55:53.515  INFO 23476 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-13 19:55:53.519  INFO 23476 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 1.045 seconds (JVM running for 46.86)
+2021-01-13 19:55:53.521  INFO 23476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-13 19:55:56.037  INFO 23476 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-13 19:55:56.037  INFO 23476 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-13 19:55:56.047  INFO 23476 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2021-01-13 19:56:01.042  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:01.076  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:01.077  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:07.436  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:07.440  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:07.440  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:10.038  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:10.042  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:10.042  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:16.034  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:16.038  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:16.039  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:22.195  INFO 23476 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-13 19:56:22.206  WARN 23476 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-13 19:56:22.211  WARN 23476 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-13 19:56:22.214  INFO 23476 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:22.214  INFO 23476 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-13 19:56:22.729  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:22.735  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:22.735  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:47.772  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 19:56:47.781  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:47.781  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-13 19:56:48.141  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:48.145  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:48.145  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:51.472  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-13 19:56:51.482  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:51.482  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-13 19:56:51.790  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:51.794  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:51.795  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:53.511  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 19:56:53.517  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:53.517  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-13 19:56:53.789  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:53.792  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:53.792  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:56.033  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-13 19:56:56.041  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:56.041  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-13 19:56:56.338  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:56.341  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:56.341  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:57.576  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 19:56:57.580  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:57.580  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-13 19:56:57.867  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:57.871  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:57.871  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:58.897  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 19:56:58.917  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:58.918  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : tags
+2021-01-13 19:56:59.222  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:56:59.225  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:59.226  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:56:59.837  INFO 23476 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.ArchiveShowController.archives', args=[{}]} 
+2021-01-13 19:56:59.849  INFO 23476 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:56:59.849  INFO 23476 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : archives
+2021-01-13 19:57:00.122  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:57:00.125  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:00.125  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:57:03.062  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/about', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.AboutShowController.about', args=[]} 
+2021-01-13 19:57:03.065  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:03.065  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Result : about
+2021-01-13 19:57:03.356  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:57:03.359  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:03.359  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:57:05.479  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.ArchiveShowController.archives', args=[{}]} 
+2021-01-13 19:57:05.487  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:05.487  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Result : archives
+2021-01-13 19:57:05.750  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:57:05.753  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:05.753  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:57:23.887  INFO 23476 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 19:57:23.895  INFO 23476 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:23.895  INFO 23476 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : tags
+2021-01-13 19:57:24.243  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:57:24.246  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:24.246  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:57:25.071  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 19:57:25.076  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:25.076  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-13 19:57:25.361  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:57:25.365  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:25.365  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:57:26.944  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-13 19:57:26.952  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:26.952  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-13 19:57:27.243  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:57:27.246  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:57:27.246  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:59:45.904  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 19:59:45.909  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:45.909  INFO 23476 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-13 19:59:46.243  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:59:46.246  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:46.246  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:59:46.840  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 19:59:46.850  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:46.850  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Result : tags
+2021-01-13 19:59:47.130  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:59:47.134  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:47.134  INFO 23476 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:59:47.727  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.ArchiveShowController.archives', args=[{}]} 
+2021-01-13 19:59:47.733  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:47.733  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : archives
+2021-01-13 19:59:48.001  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:59:48.004  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:48.004  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:59:48.473  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/about', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.AboutShowController.about', args=[]} 
+2021-01-13 19:59:48.473  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:48.473  INFO 23476 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Result : about
+2021-01-13 19:59:48.749  INFO 23476 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:59:48.753  INFO 23476 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:48.753  INFO 23476 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 19:59:49.392  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-13 19:59:49.399  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:49.399  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-13 19:59:49.700  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 19:59:49.702  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 19:59:49.703  INFO 23476 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:00:04.560  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:00:04.563  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:00:04.563  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:00:06.925  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:00:06.928  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:00:06.928  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:00:10.428  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:00:10.431  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:00:10.431  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:01:03.335  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:01:03.338  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:01:03.338  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:01:14.798  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:01:14.800  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:01:14.801  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:01:16.118  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:01:16.121  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:01:16.121  INFO 23476 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:02:30.508  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:02:30.512  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:02:30.512  INFO 23476 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:04:58.438  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:04:58.441  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:04:58.441  INFO 23476 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:05:01.115  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:05:01.118  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:05:01.119  INFO 23476 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:10:58.922  INFO 10868 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 10868 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-13 20:10:58.924 DEBUG 10868 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-13 20:10:58.924  INFO 10868 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-13 20:10:58.960  INFO 10868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-13 20:10:58.960  INFO 10868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-13 20:10:59.417  INFO 10868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-13 20:10:59.468  INFO 10868 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 5 JPA repository interfaces.
+2021-01-13 20:10:59.986  INFO 10868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-13 20:10:59.992  INFO 10868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-13 20:10:59.993  INFO 10868 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-01-13 20:11:00.095  INFO 10868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-13 20:11:00.095  INFO 10868 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1135 ms
+2021-01-13 20:11:00.201  INFO 10868 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-13 20:11:00.235  INFO 10868 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-13 20:11:00.264  INFO 10868 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-01-13 20:11:00.346  WARN 10868 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-13 20:11:00.347  INFO 10868 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-13 20:11:00.412  INFO 10868 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-13 20:11:00.493  INFO 10868 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-13 20:11:00.505  INFO 10868 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-01-13 20:11:01.045  INFO 10868 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-13 20:11:01.050  INFO 10868 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-13 20:11:01.321  INFO 10868 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-13 20:11:01.359  INFO 10868 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-13 20:11:01.410  WARN 10868 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-13 20:11:01.569  INFO 10868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-13 20:11:01.570  INFO 10868 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-13 20:11:01.962  INFO 10868 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-13 20:11:01.968  INFO 10868 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.485 seconds (JVM running for 5.62)
+2021-01-13 20:11:17.309  INFO 10868 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-13 20:11:17.309  INFO 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-13 20:11:17.315  INFO 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-01-13 20:11:25.573  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:11:25.585  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:11:25.585  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:13:25.145  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:13:25.151  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:13:25.151  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:18:19.587  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 20:18:19.592  WARN 10868 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-13 20:18:19.603  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:18:19.603  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-13 20:18:19.995  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:18:19.999  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:18:19.999  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:18:28.819  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:18:28.823  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:18:28.823  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:20:04.354  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:20:04.358  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:20:04.358  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:30:37.980  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:30:37.984  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:30:37.984  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:44:17.172  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/blog/88', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[88, {}]} 
+2021-01-13 20:44:17.221  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:44:17.221  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : blog
+2021-01-13 20:44:17.712  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:44:17.717  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:44:17.717  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:44:17.838  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/comments/88', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[88, {}]} 
+2021-01-13 20:44:17.857  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:44:17.857  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : blog :: commentList
+2021-01-13 20:50:18.775  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-13 20:50:18.788  WARN 10868 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-13 20:50:18.791  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:50:18.791  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-13 20:50:19.130  INFO 10868 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:50:19.133  INFO 10868 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:50:19.133  INFO 10868 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:50:22.006  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 20:50:22.011  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:50:22.011  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-13 20:50:22.322  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:50:22.330  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:50:22.330  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:50:24.221  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 20:50:24.238  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:50:24.238  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Result : tags
+2021-01-13 20:50:24.553  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:50:24.557  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:50:24.557  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:57:05.454  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/about', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.AboutShowController.about', args=[]} 
+2021-01-13 20:57:05.456  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:05.456  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Result : about
+2021-01-13 20:57:05.773  INFO 10868 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:57:05.776  INFO 10868 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:05.776  INFO 10868 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:57:09.317  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.ArchiveShowController.archives', args=[{}]} 
+2021-01-13 20:57:09.327  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:09.327  INFO 10868 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : archives
+2021-01-13 20:57:09.603  INFO 10868 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:57:09.607  INFO 10868 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:09.607  INFO 10868 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:57:10.172  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/about', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.AboutShowController.about', args=[]} 
+2021-01-13 20:57:10.172  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:10.172  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : about
+2021-01-13 20:57:10.439  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:57:10.443  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:10.443  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:57:10.773  INFO 10868 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.ArchiveShowController.archives', args=[{}]} 
+2021-01-13 20:57:10.778  INFO 10868 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:10.779  INFO 10868 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : archives
+2021-01-13 20:57:11.026  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:57:11.029  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:11.029  INFO 10868 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:57:11.661  INFO 10868 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 20:57:11.668  INFO 10868 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:11.669  INFO 10868 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Result : tags
+2021-01-13 20:57:11.946  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:57:11.949  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:11.949  INFO 10868 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:57:12.541  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-13 20:57:12.546  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:12.546  INFO 10868 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-13 20:57:12.828  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:57:12.831  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:12.831  INFO 10868 --- [http-nio-8080-exec-6] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-13 20:57:13.253  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-13 20:57:13.261  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:13.261  INFO 10868 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-13 20:57:13.519  INFO 10868 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-13 20:57:13.522  INFO 10868 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-13 20:57:13.522  INFO 10868 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList

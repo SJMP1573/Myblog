@@ -114,4 +114,5 @@ public class BlogController {
         attributes.addFlashAttribute("message","删除成功");
         return REDIRECT_LSIT;
     }
+
 }

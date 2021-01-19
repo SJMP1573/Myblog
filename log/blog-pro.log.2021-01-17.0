@@ -1,0 +1,270 @@
+2021-01-17 11:19:17.161  INFO 5000 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 5000 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 11:19:17.161  INFO 5000 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 11:19:17.191  INFO 5000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-17 11:19:17.191  INFO 5000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-17 11:19:17.681  INFO 5000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-17 11:19:17.741  INFO 5000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 5 JPA repository interfaces.
+2021-01-17 11:19:18.280  INFO 5000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-01-17 11:19:18.321  INFO 5000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-17 11:19:18.321  INFO 5000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-01-17 11:19:18.390  INFO 5000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-17 11:19:18.390  INFO 5000 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1199 ms
+2021-01-17 11:19:18.490  INFO 5000 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-17 11:19:18.530  INFO 5000 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 11:19:18.580  INFO 5000 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-01-17 11:19:18.640  WARN 5000 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 11:19:18.690  INFO 5000 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-17 11:19:18.780  INFO 5000 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 11:19:19.360  INFO 5000 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 11:19:19.380  INFO 5000 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-01-17 11:19:19.910  INFO 5000 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 11:19:19.920  INFO 5000 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-17 11:19:20.239  INFO 5000 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-17 11:19:20.289  WARN 5000 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 11:19:20.449  INFO 5000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-17 11:19:20.482  INFO 5000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-01-17 11:19:20.482  INFO 5000 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-17 11:19:20.870  INFO 5000 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-17 11:19:20.880  INFO 5000 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 4.121 seconds (JVM running for 5.504)
+2021-01-17 11:19:55.060  INFO 5000 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 11:19:55.060  INFO 5000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-17 11:19:55.068  INFO 5000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-01-17 11:20:01.607  INFO 5000 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 11:20:01.982  INFO 5000 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:20:01.982  INFO 5000 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 11:21:08.629  INFO 5000 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/blog/79', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.blog', args=[79, {}]} 
+2021-01-17 11:21:09.123  INFO 5000 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:21:09.124  INFO 5000 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : Result : blog
+2021-01-17 11:21:09.759  INFO 5000 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 11:21:10.017  INFO 5000 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/comments/79', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.CommentController.comments', args=[79, {}]} 
+2021-01-17 11:21:10.129  INFO 5000 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:21:10.129  INFO 5000 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Result : blog :: commentList
+2021-01-17 11:21:10.548  INFO 5000 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:21:10.549  INFO 5000 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 11:27:13.237  INFO 5000 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 11:27:13.793  INFO 5000 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:27:13.793  INFO 5000 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 11:27:20.251  INFO 5000 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 11:27:20.767  INFO 5000 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:27:20.767  INFO 5000 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 11:27:34.369  INFO 5000 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-17 11:27:36.071  WARN 5000 --- [http-nio-8082-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 11:27:36.119  WARN 5000 --- [http-nio-8082-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 11:27:37.455  INFO 5000 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:27:37.455  INFO 5000 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-17 11:27:42.647  INFO 5000 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 11:27:43.656  INFO 5000 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:27:43.656  INFO 5000 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 11:49:10.020  INFO 5000 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-17 11:49:10.075  WARN 5000 --- [http-nio-8082-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73c74d89 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-01-17 11:49:13.318  INFO 5000 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:49:13.318  INFO 5000 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-17 11:49:18.415  INFO 5000 --- [http-nio-8082-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 11:49:19.741  INFO 5000 --- [http-nio-8082-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 11:49:19.741  INFO 5000 --- [http-nio-8082-exec-6] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 11:54:03.161  INFO 9420 --- [main] com.sjmp.MyblogApplicationTests          : Starting MyblogApplicationTests on LAPTOP-B3PLK4DH with PID 9420 (started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 11:54:03.161  INFO 9420 --- [main] com.sjmp.MyblogApplicationTests          : The following profiles are active: pro
+2021-01-17 11:54:04.717  WARN 9420 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 11:54:07.183  WARN 9420 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 11:54:07.768  INFO 9420 --- [main] com.sjmp.MyblogApplicationTests          : Started MyblogApplicationTests in 4.917 seconds (JVM running for 5.644)
+2021-01-17 12:21:32.676  INFO 19696 --- [main] com.sjmp.MyblogApplicationTests          : Starting MyblogApplicationTests on LAPTOP-B3PLK4DH with PID 19696 (started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 12:21:32.677  INFO 19696 --- [main] com.sjmp.MyblogApplicationTests          : The following profiles are active: pro
+2021-01-17 12:21:34.223  WARN 19696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 12:21:36.705  WARN 19696 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 12:21:37.221  INFO 19696 --- [main] com.sjmp.MyblogApplicationTests          : Started MyblogApplicationTests in 4.87 seconds (JVM running for 5.587)
+2021-01-17 16:22:09.137  INFO 10692 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 10692 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 16:22:09.139  INFO 10692 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 16:22:10.522  WARN 10692 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 16:22:11.964  WARN 10692 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 16:22:12.507  INFO 10692 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.748 seconds (JVM running for 4.962)
+2021-01-17 16:22:39.953  INFO 10692 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-17 16:22:41.902  WARN 10692 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 16:22:41.955  WARN 10692 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 16:22:43.258  INFO 10692 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 16:22:43.259  INFO 10692 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-17 16:36:24.868  INFO 23808 --- [main] com.sjmp.MyblogApplicationTests          : Starting MyblogApplicationTests on LAPTOP-B3PLK4DH with PID 23808 (started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 16:36:24.869  INFO 23808 --- [main] com.sjmp.MyblogApplicationTests          : The following profiles are active: pro
+2021-01-17 16:36:26.408  WARN 23808 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 16:36:28.848  WARN 23808 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 16:36:29.358  INFO 23808 --- [main] com.sjmp.MyblogApplicationTests          : Started MyblogApplicationTests in 4.812 seconds (JVM running for 5.578)
+2021-01-17 16:41:17.576  INFO 18664 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 18664 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 16:41:17.578  INFO 18664 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 16:41:18.897  WARN 18664 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 16:41:20.352  WARN 18664 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 16:41:20.523  WARN 18664 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-01-17 16:41:20.842 ERROR 18664 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-01-17 16:41:34.835  INFO 14692 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 14692 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 16:41:34.837  INFO 14692 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 16:41:36.198  WARN 14692 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 16:41:37.620  WARN 14692 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 16:41:38.163  INFO 14692 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.693 seconds (JVM running for 4.917)
+2021-01-17 16:42:21.271  INFO 14692 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-17 16:42:23.446  WARN 14692 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 16:42:23.507  WARN 14692 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 16:42:24.844  INFO 14692 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 16:42:24.844  INFO 14692 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-17 16:42:29.899  INFO 14692 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 16:42:31.095  INFO 14692 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 16:42:31.095  INFO 14692 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 16:46:05.244  INFO 19940 --- [main] com.sjmp.MyblogApplicationTests          : Starting MyblogApplicationTests on LAPTOP-B3PLK4DH with PID 19940 (started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 16:46:05.245  INFO 19940 --- [main] com.sjmp.MyblogApplicationTests          : The following profiles are active: pro
+2021-01-17 16:46:06.922  WARN 19940 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 16:46:09.403  WARN 19940 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 16:46:09.947  INFO 19940 --- [main] com.sjmp.MyblogApplicationTests          : Started MyblogApplicationTests in 5.042 seconds (JVM running for 5.777)
+2021-01-17 17:28:18.847  INFO 7616 --- [main] com.sjmp.MyblogApplicationTests          : Starting MyblogApplicationTests on LAPTOP-B3PLK4DH with PID 7616 (started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 17:28:18.847  INFO 7616 --- [main] com.sjmp.MyblogApplicationTests          : The following profiles are active: pro
+2021-01-17 17:28:20.399  WARN 7616 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 17:28:22.877  WARN 7616 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 17:28:23.418  INFO 7616 --- [main] com.sjmp.MyblogApplicationTests          : Started MyblogApplicationTests in 4.885 seconds (JVM running for 5.625)
+2021-01-17 17:46:58.872  INFO 24812 --- [main] com.sjmp.MyblogApplicationTests          : Starting MyblogApplicationTests on LAPTOP-B3PLK4DH with PID 24812 (started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 17:46:58.873  INFO 24812 --- [main] com.sjmp.MyblogApplicationTests          : The following profiles are active: pro
+2021-01-17 17:47:00.570  WARN 24812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 17:47:03.352  WARN 24812 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 17:47:03.929  INFO 24812 --- [main] com.sjmp.MyblogApplicationTests          : Started MyblogApplicationTests in 5.411 seconds (JVM running for 6.174)
+2021-01-17 17:57:34.916  INFO 9236 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 9236 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 17:57:34.919  INFO 9236 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 17:57:36.241  WARN 9236 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 17:57:37.662  WARN 9236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 17:57:38.190  INFO 9236 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.629 seconds (JVM running for 4.822)
+2021-01-17 17:57:47.901  INFO 9236 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-17 17:57:49.542  WARN 9236 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 17:57:49.605  WARN 9236 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 17:57:51.064  INFO 9236 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 17:57:51.065  INFO 9236 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-17 17:57:56.307  INFO 9236 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/myblog/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 17:57:57.285  INFO 9236 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 17:57:57.285  INFO 9236 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:25:16.698  INFO 22664 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 22664 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 18:25:16.700  INFO 22664 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 18:25:18.060  WARN 22664 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 18:25:19.481  WARN 22664 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 18:25:20.025  INFO 22664 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.693 seconds (JVM running for 4.893)
+2021-01-17 18:25:30.541  INFO 22664 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-17 18:25:32.125  WARN 22664 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 18:25:32.180  WARN 22664 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 18:25:33.721  INFO 22664 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:25:33.722  INFO 22664 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-17 18:25:38.920  INFO 22664 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:25:39.958  INFO 22664 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:25:39.958  INFO 22664 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:25:43.351  INFO 22664 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='127.0.0.1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-17 18:25:44.868  INFO 22664 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:25:44.868  INFO 22664 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-17 18:39:44.692  INFO 23740 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 23740 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 18:39:44.694  INFO 23740 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 18:39:46.012  WARN 23740 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 18:39:47.520  WARN 23740 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 18:39:48.077  INFO 23740 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.696 seconds (JVM running for 4.748)
+2021-01-17 18:39:52.177  INFO 23740 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/types/-1', ip='127.0.0.1', classMethod='com.sjmp.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]} 
+2021-01-17 18:39:52.187  WARN 23740 --- [http-nio-8082-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 18:39:53.702  INFO 23740 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:39:53.703  INFO 23740 --- [http-nio-8082-exec-1] com.sjmp.aspect.LogAspect                : Result : types
+2021-01-17 18:39:56.203  INFO 23740 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:39:56.944  INFO 23740 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:39:56.944  INFO 23740 --- [http-nio-8082-exec-3] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:42:42.414  INFO 23740 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 23740 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 18:42:42.415  INFO 23740 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 18:42:42.888  WARN 23740 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 18:42:43.408  INFO 13960 --- [main] com.sjmp.MyblogApplicationTests          : Starting MyblogApplicationTests on LAPTOP-B3PLK4DH with PID 13960 (started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 18:42:43.409  INFO 13960 --- [main] com.sjmp.MyblogApplicationTests          : The following profiles are active: pro
+2021-01-17 18:42:43.672  WARN 23740 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 18:42:43.991  INFO 23740 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 1.6 seconds (JVM running for 180.662)
+2021-01-17 18:42:45.135  WARN 13960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 18:42:47.716  WARN 13960 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 18:42:48.300  INFO 13960 --- [main] com.sjmp.MyblogApplicationTests          : Started MyblogApplicationTests in 5.234 seconds (JVM running for 5.988)
+2021-01-17 18:44:11.891  INFO 23740 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-17 18:44:13.392  WARN 23740 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 18:44:13.440  WARN 23740 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-17 18:44:14.978  INFO 23740 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:44:14.979  INFO 23740 --- [http-nio-8080-exec-3] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-17 18:44:20.283  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:44:21.207  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:44:21.207  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:44:32.151  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:44:32.788  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:44:32.788  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:44:36.499  INFO 23740 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:44:37.255  INFO 23740 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:44:37.255  INFO 23740 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:44:38.748  INFO 23740 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:44:39.308  INFO 23740 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:44:39.308  INFO 23740 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:44:44.695  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:44:45.205  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:44:45.206  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:44:48.003  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:44:48.465  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:44:48.466  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:44:55.995  INFO 23740 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:44:56.900  INFO 23740 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:44:56.900  INFO 23740 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:53:51.244  INFO 23740 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:53:51.831  INFO 23740 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:53:51.831  INFO 23740 --- [http-nio-8080-exec-5] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:53:53.039  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:53:53.661  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:53:53.662  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:54:38.899  INFO 23740 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:54:39.583  INFO 23740 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:54:39.583  INFO 23740 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:54:41.317  INFO 23740 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:54:41.872  INFO 23740 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:54:41.873  INFO 23740 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:54:45.429  INFO 23740 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:54:45.928  INFO 23740 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:54:45.928  INFO 23740 --- [http-nio-8080-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:55:15.217  INFO 23740 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:55:15.670  INFO 23740 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:55:15.670  INFO 23740 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:55:19.951  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:55:20.458  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:55:20.458  INFO 23740 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:55:28.375  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:55:28.842  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:55:28.842  INFO 23740 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:55:29.734  INFO 23740 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:55:30.229  INFO 23740 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:55:30.229  INFO 23740 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:56:24.562  INFO 7968 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 7968 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-17 18:56:24.564  INFO 7968 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: pro
+2021-01-17 18:56:25.894  WARN 7968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-17 18:56:27.334  WARN 7968 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-17 18:56:27.887  INFO 7968 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.69 seconds (JVM running for 4.877)
+2021-01-17 18:56:40.292  INFO 7968 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:56:40.892  INFO 7968 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:56:40.892  INFO 7968 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:56:48.990  INFO 7968 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:56:49.818  INFO 7968 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:56:49.818  INFO 7968 --- [http-nio-8082-exec-4] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:56:50.680  INFO 7968 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:56:51.231  INFO 7968 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:56:51.231  INFO 7968 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 18:56:52.348  INFO 7968 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 18:56:52.886  INFO 7968 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 18:56:52.886  INFO 7968 --- [http-nio-8082-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 19:05:32.852  INFO 7968 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 19:05:33.317  INFO 7968 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 19:05:33.317  INFO 7968 --- [http-nio-8082-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 19:05:37.289  INFO 7968 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 19:05:37.795  INFO 7968 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 19:05:37.795  INFO 7968 --- [http-nio-8082-exec-9] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 19:05:45.725  INFO 7968 --- [http-nio-8082-exec-6] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 19:05:46.404  INFO 7968 --- [http-nio-8082-exec-6] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 19:05:46.404  INFO 7968 --- [http-nio-8082-exec-6] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 19:05:48.593  INFO 7968 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='127.0.0.1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-17 19:05:49.138  INFO 7968 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-17 19:05:49.139  INFO 7968 --- [http-nio-8082-exec-5] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-17 20:06:04.782  WARN 7968 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m7s789ms375µs300ns).

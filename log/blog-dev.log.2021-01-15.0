@@ -1,0 +1,251 @@
+2021-01-15 22:26:12.428  INFO 15608 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 15608 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-15 22:26:12.428 DEBUG 15608 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-15 22:26:12.428  INFO 15608 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-15 22:26:12.468  INFO 15608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-15 22:26:12.468  INFO 15608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-15 22:26:12.913  INFO 15608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-15 22:26:12.963  INFO 15608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 5 JPA repository interfaces.
+2021-01-15 22:26:13.513  INFO 15608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-15 22:26:13.523  INFO 15608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-15 22:26:13.523  INFO 15608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-01-15 22:26:13.613  INFO 15608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-15 22:26:13.613  INFO 15608 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1145 ms
+2021-01-15 22:26:13.733  INFO 15608 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 22:26:13.763  INFO 15608 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-15 22:26:13.793  INFO 15608 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-01-15 22:26:13.863  WARN 15608 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 22:26:13.873  INFO 15608 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-15 22:26:13.933  INFO 15608 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-15 22:26:14.033  INFO 15608 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-15 22:26:14.043  INFO 15608 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-01-15 22:26:14.552  INFO 15608 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-15 22:26:14.552  INFO 15608 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 22:26:14.852  INFO 15608 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-15 22:26:14.892  INFO 15608 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-15 22:26:14.912  WARN 15608 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-15 22:26:15.062  INFO 15608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-15 22:26:15.062  INFO 15608 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-15 22:26:15.430  INFO 15608 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-15 22:26:15.445  INFO 15608 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.415 seconds (JVM running for 4.7)
+2021-01-15 22:26:26.129  INFO 15608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-15 22:26:26.130  INFO 15608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-15 22:26:26.136  INFO 15608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-01-15 22:26:38.681  INFO 15608 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-15 22:26:38.706  INFO 15608 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-15 22:26:38.706  INFO 15608 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-15 22:26:42.194  INFO 15608 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-15 22:26:42.198  INFO 15608 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-15 22:26:42.198  INFO 15608 --- [http-nio-8080-exec-2] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-15 22:26:43.092  INFO 15608 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-15 22:26:43.096  INFO 15608 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-15 22:26:43.097  INFO 15608 --- [http-nio-8080-exec-10] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-15 22:27:06.664  INFO 15608 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-15 22:27:06.678  WARN 15608 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-15 22:27:06.686  WARN 15608 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-15 22:27:06.689  INFO 15608 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-15 22:27:06.689  INFO 15608 --- [http-nio-8080-exec-8] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-15 22:27:07.156  INFO 15608 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-15 22:27:07.160  INFO 15608 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-15 22:27:07.160  INFO 15608 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-15 22:45:01.345  INFO 17332 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 17332 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-15 22:45:01.345 DEBUG 17332 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-15 22:45:01.345  INFO 17332 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-15 22:45:01.375  INFO 17332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-15 22:45:01.475  WARN 17332 --- [restartedMain] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.sjmp.MyblogApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+2021-01-15 22:45:01.485 ERROR 17332 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.sjmp.MyblogApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.sjmp.MyblogApplication.main(MyblogApplication.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:162)
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:402)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:325)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 18 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.servlet.support.SpringBootServletInitializer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:455)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:151)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/ServletContext
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 29 common frames omitted
+
+2021-01-15 22:47:46.686  INFO 7264 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 7264 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-15 22:47:46.686 DEBUG 7264 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-15 22:47:46.686  INFO 7264 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-15 22:47:46.715  INFO 7264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-15 22:47:46.815  WARN 7264 --- [restartedMain] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.sjmp.MyblogApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+2021-01-15 22:47:46.825 ERROR 7264 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.sjmp.MyblogApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.sjmp.MyblogApplication.main(MyblogApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:162)
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:402)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:325)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 18 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.servlet.support.SpringBootServletInitializer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:455)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:151)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/ServletContext
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 29 common frames omitted
+
+2021-01-15 22:52:55.710  INFO 9588 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 9588 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-15 22:52:55.712 DEBUG 9588 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-15 22:52:55.712  INFO 9588 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-15 22:52:55.742  INFO 9588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-15 22:52:55.832  WARN 9588 --- [restartedMain] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.sjmp.MyblogApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+2021-01-15 22:52:55.843 ERROR 9588 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.sjmp.MyblogApplication]; nested exception is java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.sjmp.MyblogApplication.main(MyblogApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotated methods on class org.springframework.boot.web.servlet.support.SpringBootServletInitializer
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:162)
+	at org.springframework.context.annotation.ConfigurationClassParser.retrieveBeanMethodMetadata(ConfigurationClassParser.java:402)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:325)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 18 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.web.servlet.support.SpringBootServletInitializer] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:455)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAnnotatedMethods(StandardAnnotationMetadata.java:151)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/ServletContext
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletContext
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 29 common frames omitted
+
+2021-01-15 22:58:14.236  INFO 6356 --- [restartedMain] com.sjmp.MyblogApplication               : Starting MyblogApplication on LAPTOP-B3PLK4DH with PID 6356 (E:\Switch\blog\myblog\target\classes started by 10511 in E:\Switch\blog\myblog)
+2021-01-15 22:58:14.238 DEBUG 6356 --- [restartedMain] com.sjmp.MyblogApplication               : Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2021-01-15 22:58:14.238  INFO 6356 --- [restartedMain] com.sjmp.MyblogApplication               : The following profiles are active: dev
+2021-01-15 22:58:14.268  INFO 6356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-15 22:58:14.268  INFO 6356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-15 22:58:14.717  INFO 6356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-15 22:58:14.767  INFO 6356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 5 JPA repository interfaces.
+2021-01-15 22:58:15.257  INFO 6356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-15 22:58:15.263  INFO 6356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-15 22:58:15.263  INFO 6356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2021-01-15 22:58:15.358  INFO 6356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-15 22:58:15.359  INFO 6356 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1090 ms
+2021-01-15 22:58:15.456  INFO 6356 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 22:58:15.488  INFO 6356 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-15 22:58:15.517  INFO 6356 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2021-01-15 22:58:15.595  WARN 6356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-15 22:58:15.601  INFO 6356 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-15 22:58:15.662  INFO 6356 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-15 22:58:15.741  INFO 6356 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-15 22:58:15.753  INFO 6356 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-01-15 22:58:16.264  INFO 6356 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-15 22:58:16.268  INFO 6356 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-15 22:58:16.524  INFO 6356 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-15 22:58:16.561  INFO 6356 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-15 22:58:16.607  WARN 6356 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-15 22:58:16.765  INFO 6356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-15 22:58:16.765  INFO 6356 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-15 22:58:17.120  INFO 6356 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-15 22:58:17.126  INFO 6356 --- [restartedMain] com.sjmp.MyblogApplication               : Started MyblogApplication in 3.271 seconds (JVM running for 4.5)
+2021-01-15 22:58:26.841  INFO 6356 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-15 22:58:26.841  INFO 6356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-15 22:58:26.848  INFO 6356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-01-15 22:58:26.868  INFO 6356 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.index', args=[Page request [number: 0, size 8, sort: createTime: DESC], {}]} 
+2021-01-15 22:58:26.933  WARN 6356 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-15 22:58:26.942  WARN 6356 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-15 22:58:26.947  INFO 6356 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-15 22:58:26.947  INFO 6356 --- [http-nio-8080-exec-1] com.sjmp.aspect.LogAspect                : Result : index
+2021-01-15 22:58:27.564  INFO 6356 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-15 22:58:27.568  INFO 6356 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-15 22:58:27.568  INFO 6356 --- [http-nio-8080-exec-4] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList
+2021-01-15 22:58:47.196  INFO 6356 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Request : {url='/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sjmp.web.IndexController.newblogs', args=[{}]} 
+2021-01-15 22:58:47.202  INFO 6356 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : ---------doAfter----------
+2021-01-15 22:58:47.202  INFO 6356 --- [http-nio-8080-exec-7] com.sjmp.aspect.LogAspect                : Result : _fragments :: newblogList

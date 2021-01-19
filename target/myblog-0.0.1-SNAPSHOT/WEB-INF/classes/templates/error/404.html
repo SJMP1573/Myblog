@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+
+    <!--  这段代码一般是用于网站页面在手机端显示时根据屏幕适应  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>404</title>
+
+    <!--  前端框架 semantic ui 的引入  -->
+    <!--  引入样式  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <!--  引入自定义样式 ,这里导入idea，使用了thymleaf 模板引擎，需要加入相应的样式 -->
+    <link rel="stylesheet" href="../../static/css/me.css" >
+</head>
+<body>
+
+
+    <!--导航-->
+    <!--  m-padded-tb-mini 自定义间隔样式 -->
+    <nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padded-tb-mini" >
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small home icon"></i> 首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small idea icon"></i> 分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small tags icon"></i> 标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small clone icon"></i> 归档</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="small info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div class="m-container-small m-padded-tb-massive" >
+    <div class="ui error message m-padded-tb-huge">
+        <h2>404</h2>
+        <p>对不起，你访问的页面不存在</p>
+    </div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--  底部 footer  -->
+    <!--  inverted 反色 segement 线框效果 vertical 充满没有圆角  -->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive" >
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img th:src=@{../static/images/QQ.JPG} src="../static/images/QQ.JPG" class="ui rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事（User Story）</a>
+                        <a href="#" class="item">用户故事（User Story）</a>
+                        <a href="#" class="item">用户故事（User Story）</a>
+                    </div>
+                </div>
+
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email：1051181472@qq.com</a>
+                        <a href="#" class="item">QQ：1051181472</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、会分享关于编程写作、思考相关的任何内容</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020 SJMP Designed by SJMP</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -39,6 +39,9 @@ public class MD5Utils {
             e.printStackTrace();
             return null;
         }
+    }
 
+    public static void main(String[] args) {
+        System.out.println(MD5Utils.code("lwb5542110"));
     }
 }

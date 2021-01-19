@@ -3,10 +3,10 @@ spring:
   thymeleaf:
     mode: HTML
   profiles:
-    active: dev
+    active: pro
   messages:
     basename: i18n/messages
 
 comment.avatar: /images/avatar.jpg
 server:
-  port: 8081
+  port: 8080

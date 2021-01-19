@@ -68,6 +68,7 @@
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
                 <div id="newblog-container">
+                    <!-- IndexController.java 请求控制，加载局部 newblogList, 方法返回 newblogs，使用 JQuery 加载 这部分，js 可识别 newblog-container-->
                     <div class="ui inverted link list" th:fragment="newblogList">
                         <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
                         <!--/*-->
@@ -78,8 +79,6 @@
                 </div>
             </div>
 
-
-
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
                 <div class="ui inverted link list">
@@ -87,6 +86,7 @@
                     <a href="#" class="item">QQ：1051181472</a>
                 </div>
             </div>
+
             <div class="seven wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4>
                 <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，会分享一些关于编程写作和个人感悟的内容</p>
@@ -100,10 +100,14 @@
 <th:block th:fragment="script">
     <!--  引入 Jquery  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<!--  引入组件库  -->
-<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-<!--    引入 markdown 插件的js-->
-<script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <!--  引入组件库  -->
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <!--    引入 markdown 插件的js-->
+    <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <!--底部 footer-->
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 </th:block>
 
 </body>

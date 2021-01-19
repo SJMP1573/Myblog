@@ -6,7 +6,6 @@ spring:
     username: root
     password: 1234
 
-
 # 解决分类点击新增，无法正常跳转到 types-input 页面
   thymeleaf:
     content-type: text/html
@@ -29,7 +28,7 @@ logging:
   file:
     name: log/blog-dev.log
 server:
-  port: 8082
+  port: 8080
 
 
 
